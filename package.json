@@ -1,0 +1,27 @@
+{
+  "name": "cloud-factory-cafe",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.25.0",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 3000 --strictPort",
+    "predev": "pnpm run prerender",
+    "prerender": "node scripts/prerender.mjs",
+    "build": "pnpm run prerender && vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 3000 --strictPort"
+  },
+  "dependencies": {
+    "gsap": "^3.13.0",
+    "pnpm": "^12.8.1",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "vite": "^7.1.0"
+  },
+  "allowScripts": {
+    "pnpm@12.8.1": true
+  }
+}
